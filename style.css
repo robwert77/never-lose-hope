@@ -654,6 +654,7 @@ li + li { margin-top: 0.45em; }
   font-size: 1.9rem;
   font-weight: 900;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 .connex-card__detail {
   font-size: 0.8rem;
@@ -814,6 +815,7 @@ li + li { margin-top: 0.45em; }
   .library-item { border-top: none; border-right: 1px solid var(--border); }
   .library-item:nth-child(even) { border-right: none; }
   .library-item:nth-child(n+3) { border-top: 1px solid var(--border); }
+  .library-item:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: none; }
 
   .connex-card { flex-direction: row; justify-content: space-between; text-align: left; padding: 24px 32px; }
   .connex-card__number { font-size: 2.2rem; }
