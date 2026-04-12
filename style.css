@@ -278,12 +278,14 @@ li + li { margin-top: 0.45em; }
 }
 .primary-helpline__eyebrow svg { flex-shrink: 0; }
 .primary-helpline__number {
+  display: block;
   font-size: 2.6rem;
   font-weight: 900;
   letter-spacing: 0.04em;
   line-height: 1.1;
 }
 .primary-helpline__detail {
+  display: block;
   font-size: 0.9rem;
   color: rgba(255,255,255,.8);
   margin-top: 2px;
@@ -639,6 +641,7 @@ li + li { margin-top: 0.45em; }
   transform: translateY(-2px);
 }
 .connex-card__eyebrow {
+  display: block;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -646,17 +649,20 @@ li + li { margin-top: 0.45em; }
   color: rgba(255,255,255,.65);
 }
 .connex-card__title {
+  display: block;
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 2px;
 }
 .connex-card__number {
+  display: block;
   font-size: 1.9rem;
   font-weight: 900;
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
 .connex-card__detail {
+  display: block;
   font-size: 0.8rem;
   color: rgba(255,255,255,.65);
 }
