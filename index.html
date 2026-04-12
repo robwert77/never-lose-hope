@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free crisis resources, shelter finder, food banks, Ontario Works, and rehab pathways for unhoused and vulnerable people in Toronto and Ontario.">
+  <meta name="theme-color" content="#0d2b4e">
+  <title>Never Lose Hope — Toronto Crisis Resources</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       STICKY 911 HEADER
+  ══════════════════════════════════════════════════════════════ -->
+  <header class="sticky-header" role="banner">
+    <a href="tel:911" class="btn-911" aria-label="Emergency — tap to call 9-1-1">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      EMERGENCY — Tap to Call 911
+    </a>
+  </header>
+
+  <main id="top">
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-badge" aria-label="Toronto and Ontario">
+        <!-- Maple leaf -->
+        <svg width="14" height="14" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5l6 18h18l-14 11 5 18-15-10-15 10 5-18-14-11h18z"/><rect x="45" y="70" width="10" height="22" rx="2"/></svg>
+        Toronto &amp; Ontario
+      </div>
+
+      <h1 id="hero-heading">Never Lose <span class="highlight">Hope</span></h1>
+      <p class="hero-sub">Are you unhoused and seeking support? <strong>We can help.</strong> Free resources are one tap away.</p>
+
+      <nav class="jump-nav" aria-label="Jump to section">
+        <a href="#crisis"    class="jump-link">Crisis Help</a>
+        <a href="#resources" class="jump-link">Helpful Links</a>
+        <a href="#ow"        class="jump-link">Ontario Works</a>
+        <a href="#libraries" class="jump-link">No Phone?</a>
+        <a href="#rehab"     class="jump-link">Free Rehab</a>
+      </nav>
+
+      <!-- Toronto Skyline SVG -->
+      <svg class="skyline-band" viewBox="0 0 800 90" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <!-- Base ground -->
+        <rect x="0" y="78" width="800" height="12" fill="#ede8dc"/>
+        <!-- Background buildings left cluster -->
+        <rect x="0"   y="55" width="40"  height="23" fill="#183a64" opacity=".55"/>
+        <rect x="38"  y="42" width="28"  height="36" fill="#1a3f6e" opacity=".55"/>
+        <rect x="64"  y="50" width="22"  height="28" fill="#183a64" opacity=".55"/>
+        <rect x="84"  y="36" width="32"  height="42" fill="#1d4575" opacity=".6"/>
+        <rect x="90"  y="30" width="18"  height="6"  fill="#1d4575" opacity=".6"/>
+        <rect x="114" y="46" width="26"  height="32" fill="#183a64" opacity=".55"/>
+        <rect x="138" y="38" width="20"  height="40" fill="#1a3f6e" opacity=".55"/>
+        <rect x="156" y="52" width="30"  height="26" fill="#183a64" opacity=".5"/>
+        <rect x="184" y="44" width="22"  height="34" fill="#1d4575" opacity=".55"/>
+        <!-- CN Tower -->
+        <!-- Antenna needle -->
+        <rect x="392" y="2"  width="3"   height="18" fill="#0d2b4e"/>
+        <!-- Neck -->
+        <polygon points="388,20 395,20 397,44 386,44" fill="#0d2b4e"/>
+        <!-- Pod / observation deck -->
+        <rect x="381" y="38" width="30"  height="12" rx="3" fill="#0d2b4e"/>
+        <!-- Tower shaft -->
+        <polygon points="389,50 404,50 408,78 384,78" fill="#0d2b4e"/>
+        <!-- Tower base -->
+        <rect x="382" y="72" width="29"  height="6"  fill="#0d2b4e"/>
+        <!-- Background buildings right cluster -->
+        <rect x="420" y="46" width="28"  height="32" fill="#183a64" opacity=".55"/>
+        <rect x="446" y="38" width="22"  height="40" fill="#1a3f6e" opacity=".55"/>
+        <rect x="466" y="50" width="30"  height="28" fill="#183a64" opacity=".5"/>
+        <rect x="494" y="40" width="26"  height="38" fill="#1d4575" opacity=".55"/>
+        <rect x="518" y="32" width="20"  height="46" fill="#183a64" opacity=".55"/>
+        <rect x="536" y="48" width="28"  height="30" fill="#1a3f6e" opacity=".5"/>
+        <rect x="562" y="42" width="24"  height="36" fill="#1d4575" opacity=".55"/>
+        <rect x="584" y="54" width="30"  height="24" fill="#183a64" opacity=".5"/>
+        <rect x="612" y="38" width="22"  height="40" fill="#1a3f6e" opacity=".55"/>
+        <rect x="632" y="48" width="34"  height="30" fill="#183a64" opacity=".5"/>
+        <rect x="664" y="42" width="26"  height="36" fill="#1d4575" opacity=".55"/>
+        <rect x="688" y="55" width="40"  height="23" fill="#183a64" opacity=".5"/>
+        <rect x="726" y="44" width="30"  height="34" fill="#1a3f6e" opacity=".5"/>
+        <rect x="754" y="52" width="46"  height="26" fill="#183a64" opacity=".45"/>
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SECTION A — IMMEDIATE CRISIS HELP
+    ══════════════════════════════════════════════════════════ -->
+    <section id="crisis" class="section" aria-labelledby="crisis-heading">
+      <div class="section-header">
+        <p class="section-eyebrow">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Section A
+        </p>
+        <h2 id="crisis-heading" class="section-title">Immediate Crisis Help</h2>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="section-intro">Tap any number below to call right now. Every line is free and confidential.</p>
+      </div>
+
+      <!-- Primary helpline -->
+      <a href="tel:+16479544298" class="primary-helpline" aria-label="Call or text (647) 954-4298 for help">
+        <div>
+          <span class="primary-helpline__eyebrow">Call or Text for Help</span>
+          <span class="primary-helpline__number">(647) 954-4298</span>
+          <span class="primary-helpline__detail">Primary helpline — available for calls &amp; texts</span>
+        </div>
+        <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+
+      <!-- 2×2 crisis grid -->
+      <div class="crisis-grid" role="list">
+
+        <a href="tel:311" class="crisis-card" role="listitem" aria-label="Emergency Shelter and Intake — call 3-1-1">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="crisis-card__label">Emergency Shelter &amp; Intake</span>
+          <span class="crisis-card__number">311</span>
+        </a>
+
+        <a href="tel:211" class="crisis-card" role="listitem" aria-label="Mental Health Crisis — call 2-1-1">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <span class="crisis-card__label">Mental Health Crisis</span>
+          <span class="crisis-card__number">211</span>
+        </a>
+
+        <a href="tel:988" class="crisis-card" role="listitem" aria-label="Suicide and Crisis Lifeline — call 9-8-8">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <span class="crisis-card__label">Suicide &amp; Crisis Lifeline</span>
+          <span class="crisis-card__number">988</span>
+        </a>
+
+        <a href="tel:911" class="crisis-card" role="listitem" aria-label="Emergency Services — call 9-1-1">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="crisis-card__label">Emergency Services</span>
+          <span class="crisis-card__number">911</span>
+        </a>
+
+      </div>
+
+      <div class="call-prompt" role="note" aria-label="Tap any number to call">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Tap any card to call directly from your phone — no searching needed.
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         HOPE BANNER
+    ══════════════════════════════════════════════════════════ -->
+    <div class="hope-banner" role="complementary" aria-label="Message of hope">
+      <p>
+        You are not invisible. You are not forgotten.
+        <span>Help is available right now — no judgment, no barriers.</span>
+      </p>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         HELPFUL LINKS SECTION
+    ══════════════════════════════════════════════════════════ -->
+    <section id="resources" class="section section--alt" aria-labelledby="resources-heading">
+      <div class="section-header">
+        <p class="section-eyebrow">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          Helpful Links
+        </p>
+        <h2 id="resources-heading" class="section-title">Build a Better Life</h2>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="section-intro">Unfortunately, systemic barriers can make it harder for unhoused individuals to access support. These links go directly to the services that can help you move forward.</p>
+      </div>
+
+      <div class="accordion-group">
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-links">
+            <span>View all helpful links</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-links" role="region" hidden>
+            <ul class="steps-list" style="list-style:none;counter-reset:none;">
+              <li style="counter-increment:none;">
+                <div>
+                  <strong><a href="https://www.ontario.ca/page/ontario-works" target="_blank" rel="noopener noreferrer">Access income from the government</a></strong>
+                  <br>Apply for Ontario Works — monthly financial assistance for food, shelter, and basic needs. You can apply without a fixed address.
+                </div>
+              </li>
+              <li style="counter-increment:none;">
+                <div>
+                  <strong><a href="https://www.toronto.ca/community-people/housing-shelter/homeless-help/shelters/#location=&lat=&lng=&zoom=" target="_blank" rel="noopener noreferrer">Find a shelter nearby</a></strong>
+                  <br>The City of Toronto's interactive map shows shelter beds available near you in real time.
+                </div>
+              </li>
+              <li style="counter-increment:none;">
+                <div>
+                  <strong><a href="https://www.torontocentralhealthline.ca/listServicesDetailed.aspx?id=10572" target="_blank" rel="noopener noreferrer">Find a food bank nearby</a></strong>
+                  <br>Search for food banks, meal programs, and community kitchens in the Toronto area — all free.
+                </div>
+              </li>
+              <li style="counter-increment:none;">
+                <div>
+                  <strong><a href="https://www.ontario.ca/page/where-get-free-naloxone-kit" target="_blank" rel="noopener noreferrer">Get a free Naloxone kit</a></strong>
+                  <br>Naloxone reverses opioid overdoses. Pick one up free at any Ontario pharmacy — no prescription needed.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick-link tiles — always visible -->
+      <div class="crisis-grid" style="margin-top:16px;" role="list">
+
+        <a href="https://www.ontario.ca/page/ontario-works" target="_blank" rel="noopener noreferrer" class="crisis-card" role="listitem">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <span class="crisis-card__label">Government Income (Ontario Works)</span>
+          <span class="crisis-card__number" style="font-size:1rem;color:var(--navy);">Apply Now ↗</span>
+        </a>
+
+        <a href="https://www.toronto.ca/community-people/housing-shelter/homeless-help/shelters/#location=&lat=&lng=&zoom=" target="_blank" rel="noopener noreferrer" class="crisis-card" role="listitem">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="crisis-card__label">Find a Shelter Near Me</span>
+          <span class="crisis-card__number" style="font-size:1rem;color:var(--navy);">Find Bed ↗</span>
+        </a>
+
+        <a href="https://www.torontocentralhealthline.ca/listServicesDetailed.aspx?id=10572" target="_blank" rel="noopener noreferrer" class="crisis-card" role="listitem">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <span class="crisis-card__label">Find a Food Bank Near Me</span>
+          <span class="crisis-card__number" style="font-size:1rem;color:var(--navy);">Find Food ↗</span>
+        </a>
+
+        <a href="https://www.ontario.ca/page/where-get-free-naloxone-kit" target="_blank" rel="noopener noreferrer" class="crisis-card" role="listitem">
+          <div class="crisis-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+          </div>
+          <span class="crisis-card__label">Free Naloxone Kit</span>
+          <span class="crisis-card__number" style="font-size:1rem;color:var(--navy);">Get Kit ↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SECTION B — ONTARIO WORKS
+    ══════════════════════════════════════════════════════════ -->
+    <section id="ow" class="section" aria-labelledby="ow-heading">
+      <div class="section-header">
+        <p class="section-eyebrow">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          Section B
+        </p>
+        <h2 id="ow-heading" class="section-title">Financial Support — Ontario Works</h2>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="section-intro">Ontario Works gives you monthly income for food, rent, and basic needs. It is free. You <strong>do not need a home address</strong> to apply.</p>
+      </div>
+
+      <div class="accordion-group">
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-what">
+            <span>What is Ontario Works and what does it cover?</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-what" role="region" hidden>
+            <p>Ontario Works (OW) is a provincial assistance program that provides:</p>
+            <ul>
+              <li><strong>Monthly cash</strong> — roughly $733/month for a single adult (2024 rates) for food and personal needs</li>
+              <li><strong>Shelter allowance</strong> — up to $390/month to help with rent or shelter costs</li>
+              <li><strong>Drug &amp; dental coverage</strong> — through the Ontario Drug Benefit and Healthy Smiles programs</li>
+              <li><strong>Employment supports</strong> — resume writing, job training, bus passes, and more</li>
+              <li><strong>Transition Child Benefit</strong> — extra support if you have children</li>
+            </ul>
+            <div class="info-box">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>OW is not a loan — you do not pay it back. It is your legal right as an Ontario resident in need.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-apply">
+            <span>How do I apply for Ontario Works?</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-apply" role="region" hidden>
+            <ol class="steps-list">
+              <li><strong>Apply online</strong> at Ontario.ca — the fastest way. Use a library computer if needed (see the "No Phone?" section below).</li>
+              <li><strong>Call Toronto OW Intake</strong> at <a href="tel:4163921161">416-392-1161</a> to start over the phone.</li>
+              <li><strong>Walk in</strong> to any City of Toronto Ontario Works office with whatever ID you have. Workers are required to help you regardless.</li>
+            </ol>
+            <p style="margin-top:12px">After applying, you will be contacted within a few business days for a short interview (phone or in person). <strong>If you are in urgent need, say so</strong> — emergency assistance can sometimes be provided within 24–48 hours.</p>
+            <a href="https://www.ontario.ca/page/ontario-works" class="btn-external" target="_blank" rel="noopener noreferrer">
+              Apply at Ontario.ca
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-checklist">
+            <span>What do I need to bring? (Application Checklist)</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-checklist" role="region" hidden>
+            <p><strong>Bring what you have. You can apply with nothing at all.</strong></p>
+            <ul class="checklist">
+              <li><span>Photo ID (health card, driver's licence, passport) <em>— if you have one</em></span></li>
+              <li><span>Social Insurance Number (SIN) <em>— if you know it</em></span></li>
+              <li><span>Proof of address (shelter letter, care-of address, drop-in mail) <em>— not required if unhoused</em></span></li>
+              <li><span>Bank account info <em>— or ask for a reloadable payment card instead</em></span></li>
+              <li><span>Immigration documents <em>— if applicable to your situation</em></span></li>
+            </ul>
+            <div class="tip-box">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span><strong>No ID at all?</strong> Tell the OW worker. They are trained to help you get replacement ID (health card, birth certificate) at no cost as part of your file.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-noaddress">
+            <span>I don't have an address — can I still get Ontario Works?</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-noaddress" role="region" hidden>
+            <p><strong>Yes — you are allowed to apply without a fixed address.</strong> Here is what to do:</p>
+            <ul class="steps-list">
+              <li>Use a <strong>shelter address</strong>, a <strong>drop-in centre</strong>, or a <strong>friend's address</strong> as your mailing address</li>
+              <li>Ask your OW worker for a <strong>Direct Deposit card</strong> so you do not need a bank account</li>
+              <li>Many shelters and agencies will <strong>hold mail</strong> for you — ask the front desk</li>
+              <li>Call 311 to be connected to a shelter that can provide a mailing address today</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SECTION — NO PHONE / LIBRARY ACCESS
+    ══════════════════════════════════════════════════════════ -->
+    <section id="libraries" class="section section--alt" aria-labelledby="libraries-heading">
+      <div class="section-header">
+        <p class="section-eyebrow">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          No Phone?
+        </p>
+        <h2 id="libraries-heading" class="section-title">Find Help Offline — Libraries</h2>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="section-intro">If you don't have a phone or internet access, any Toronto Public Library branch offers <strong>free computers and Wi-Fi</strong>. A library card is free and you can use a shelter address to get one.</p>
+      </div>
+
+      <div class="library-header-box" aria-label="Find support at a Toronto library">
+        Find Support at a Library
+      </div>
+      <div class="library-list" role="list">
+
+        <a href="https://www.torontopubliclibrary.ca/detail.jsp?Entt=RDMLIB109&R=LIB109" class="library-item" target="_blank" rel="noopener noreferrer" role="listitem">
+          <div class="library-item__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <p class="library-item__name">1. Toronto Reference Library</p>
+            <p class="library-item__addr">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              789 Yonge St (at Bloor)
+            </p>
+          </div>
+        </a>
+
+        <a href="https://www.torontopubliclibrary.ca/detail.jsp?Entt=RDMLIB118&R=LIB118" class="library-item" target="_blank" rel="noopener noreferrer" role="listitem">
+          <div class="library-item__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <p class="library-item__name">2. Lillian H. Smith Library</p>
+            <p class="library-item__addr">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              239 College St (near Spadina)
+            </p>
+          </div>
+        </a>
+
+        <a href="https://www.torontopubliclibrary.ca/detail.jsp?Entt=RDMLIB122&R=LIB122" class="library-item" target="_blank" rel="noopener noreferrer" role="listitem">
+          <div class="library-item__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <p class="library-item__name">3. Fort York Library</p>
+            <p class="library-item__addr">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              190 Fort York Blvd (central west)
+            </p>
+          </div>
+        </a>
+
+      </div>
+      <div class="library-footer-box">
+        Access this website and all resources at<br>
+        <strong>[website.ca/help]</strong><br>
+        on any library computer — free, no account needed.
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SECTION C — FREE REHAB & RECOVERY
+    ══════════════════════════════════════════════════════════ -->
+    <section id="rehab" class="section" aria-labelledby="rehab-heading">
+      <div class="section-header">
+        <p class="section-eyebrow">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Section C
+        </p>
+        <h2 id="rehab-heading" class="section-title">Free Rehab &amp; Recovery</h2>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="section-intro">Addiction and mental health treatment is covered by OHIP at no cost. Recovery is possible — you can start today, wherever you are.</p>
+      </div>
+
+      <!-- ConnexOntario primary card -->
+      <a href="tel:18665312600" class="connex-card" aria-label="Call ConnexOntario 1-866-531-2600 for free rehab">
+        <div>
+          <span class="connex-card__eyebrow">Your Gateway to Free Rehab in Ontario</span>
+          <span class="connex-card__title">ConnexOntario</span>
+          <span class="connex-card__number">1-866-531-2600</span>
+          <span class="connex-card__detail">Free · Confidential · 24/7 · They find you a bed</span>
+        </div>
+        <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+
+      <div class="accordion-group">
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-covered">
+            <span>What treatment is free through OHIP?</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-covered" role="region" hidden>
+            <p>With an Ontario health card (OHIP), the following are completely free:</p>
+            <ul>
+              <li><strong>Medical detox</strong> — supervised withdrawal in a safe environment with nursing support</li>
+              <li><strong>Residential (live-in) treatment</strong> — rehab beds from 21 days to 6 months depending on your needs</li>
+              <li><strong>Outpatient counselling</strong> — regular therapy while you live at a shelter or with family</li>
+              <li><strong>Methadone &amp; Suboxone</strong> — opioid replacement therapy, covered by ODB</li>
+              <li><strong>Supportive housing</strong> — some programs provide housing during and after treatment</li>
+            </ul>
+            <div class="info-box">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span><strong>No health card?</strong> Call ConnexOntario anyway. Many programs accept people while OHIP is being processed. Applying for OHIP is free and takes about 3 months to activate.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-howrehab">
+            <span>How do I get into a free program?</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-howrehab" role="region" hidden>
+            <ol class="steps-list">
+              <li><strong>Call ConnexOntario</strong> at <a href="tel:18665312600">1-866-531-2600</a>. Tell them what you are struggling with. They search every available bed in Ontario and connect you directly.</li>
+              <li><strong>Visit a walk-in clinic or hospital ER.</strong> A doctor can write a referral for intensive inpatient programs. You cannot be turned away from an ER.</li>
+              <li><strong>Go to a Community Health Centre (CHC).</strong> CHCs serve uninsured and unhoused people and can refer you without paperwork.</li>
+              <li><strong>Ask your shelter worker.</strong> Many shelters have on-site addiction workers who can fast-track referrals and keep your spot in the shelter while you are in treatment.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-harm">
+            <span>I'm not ready for rehab — what can I do today?</span>
+            <svg class="accordion__chevron" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion__panel" id="acc-harm" role="region" hidden>
+            <p>That is okay. Every step matters. You can still protect yourself and get support right now:</p>
+            <ul>
+              <li><a href="https://www.ontario.ca/page/where-get-free-naloxone-kit" target="_blank" rel="noopener noreferrer"><strong>Free Naloxone kits</strong></a> — pick one up at any Ontario pharmacy with no questions asked. It can save your life or someone else's.</li>
+              <li><strong>Supervised consumption sites</strong> — use safely with medical staff present. Toronto has several open daily.</li>
+              <li><strong>Needle exchange programs</strong> — free at many Toronto Public Health locations</li>
+              <li><strong>Peer support groups</strong> — free AA, NA, and SMART Recovery meetings across the city every day</li>
+            </ul>
+            <div class="tip-box">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Any step forward counts. You can come back to this page whenever you are ready. There is no judgment here.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+      <p class="footer__logo">Never Lose <span>Hope</span></p>
+      <p class="footer__tagline">Free Toronto &amp; Ontario crisis resources — no login, no tracking, no cost.</p>
+
+      <!-- All numbers repeated for quick access -->
+      <nav class="footer__numbers" aria-label="All crisis numbers">
+        <a href="tel:+16479544298" class="footer__pill" aria-label="Call or text (647) 954-4298">
+          <strong>(647) 954-4298</strong>
+          Helpline
+        </a>
+        <a href="tel:311" class="footer__pill" aria-label="Call 311 for shelter">
+          <strong>311</strong>
+          Shelter
+        </a>
+        <a href="tel:211" class="footer__pill" aria-label="Call 211 for mental health">
+          <strong>211</strong>
+          Mental Health
+        </a>
+        <a href="tel:988" class="footer__pill" aria-label="Call 988 for crisis lifeline">
+          <strong>988</strong>
+          Crisis Line
+        </a>
+        <a href="tel:911" class="footer__pill" aria-label="Call 911 for emergency">
+          <strong>911</strong>
+          Emergency
+        </a>
+        <a href="tel:18665312600" class="footer__pill" aria-label="Call ConnexOntario 1-866-531-2600">
+          <strong>1-866-531-2600</strong>
+          Free Rehab
+        </a>
+      </nav>
+
+      <a href="#top" class="back-top">↑ Back to Top</a>
+      <p class="footer-fine">This site does not collect personal data. No cookies. No tracking. No ads. Hosted free on GitHub Pages.</p>
+    </footer>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
