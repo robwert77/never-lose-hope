@@ -590,19 +590,20 @@ li + li { margin-top: 0.45em; }
   counter-reset: steps;
 }
 .steps-list li {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 10px 0;
+  position: relative;
+  padding: 10px 0 10px 42px;
   border-bottom: 1px solid var(--cream-dk);
   font-size: 0.92rem;
   counter-increment: steps;
+  line-height: 1.55;
 }
 .steps-list li:last-child { border-bottom: none; }
 .steps-list li::before {
   content: counter(steps);
+  position: absolute;
+  left: 0;
+  top: 12px;
   display: flex;
-  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 26px;
@@ -612,7 +613,7 @@ li + li { margin-top: 0.45em; }
   border-radius: 50%;
   font-size: 0.75rem;
   font-weight: 800;
-  margin-top: 1px;
+  flex-shrink: 0;
 }
 
 
